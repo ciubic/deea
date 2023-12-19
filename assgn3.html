@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 3</title>
+    <style>
+.content p:first-child:hover {
+    color: blue;
+}
+
+.content p:nth-child(2):active {
+    color: red;
+}
+
+.content p:last-child:focus {
+    outline: 2px solid green;
+}
+
+.content p:not(:first-child) {
+    font-style: italic;
+}
+
+.content p::first-letter {
+    font-size: 200%;
+    color: purple;
+}
+
+.content p::first-line {
+    font-weight: bold;
+}
+
+.content p::before {
+    content: "Random1: ";
+    font-weight: bold;
+}
+
+.content p::after {
+    content: " Random text 2";
+}
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>Assignment 3</p>
+        <p>Random Text for CSS pseudo-classes and pseudo-elements</p>
+    </div>
+</body>
+</html>
